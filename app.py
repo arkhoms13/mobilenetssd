@@ -42,8 +42,10 @@ app.config['MAX_CONTENT_LENGTH'] = 6 * 1024 * 1024
 def allowed_file(filename):
     return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
 '''
-@app.route('/', methods=['GET', 'POST'])
+#@app.route('/', methods=['GET', 'POST'])
+@app.route('/')
 def index():
+    return ''
 '''
     if request.method == 'POST':
         if 'file' not in request.files:
