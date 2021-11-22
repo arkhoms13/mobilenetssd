@@ -163,7 +163,7 @@ def event_handle(event):
             json_headers = ({k:v for k, v in headers.items()})
             json_headers.update({'Host':'bots.dialogflow.com'})
             try :
-                url = "https://dialogflow.cloud.google.com/v1/integrations/line/webhook/6576b9df-df41-4476-bd59-11346b45ca4b"
+                url = "https://bots.dialogflow.com/line/6576b9df-df41-4476-bd59-11346b45ca4b/webhook"
                 requests.post(url,data=json_line, headers=json_headers)
             except:
                 replyObj = TextSendMessage(text="ติดต่อ dialogflow ไม่ได้")
