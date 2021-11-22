@@ -26,7 +26,7 @@ UPLOAD_FOLDER ='static/uploads/'
 DOWNLOAD_FOLDER = 'static/downloads/'
 ALLOWED_EXTENSIONS = {'jpg', 'png','.jpeg'}
 
-lineaccesstoken = '0wK2j7rPMvyJ7uOyuWxc345l78Gx8K74cBel6AiAc36NPdGEy2AnxE/zvgns0sZuWp1sgNpP59yWRJa0nz/oIUFOTkY/FoSRH9zlINoz6Q1/d/1A1wEBYPsrL7EEWWVSk9DiqRTtQjTMP7vMEHZ41QdB04t89/1O/w1cDnyilFU='
+lineaccesstoken = 'QnX+njbvulDE4x7ikl1MEFONd4SBQOISINivour1PhDpwtP/zEXlb3AjANZNnIBfix8CZbhsxtvByvQ50BUmduJviFkVbExy6xf8+/XGbxkysqQzwSx7TLctA0RcG5DrS23OrQxmHOmtxfzvMwu86QdB04t89/1O/w1cDnyilFU='
 
 line_bot_api = LineBotApi(lineaccesstoken)
 
@@ -163,7 +163,7 @@ def event_handle(event):
             json_headers = ({k:v for k, v in headers.items()})
             json_headers.update({'Host':'bots.dialogflow.com'})
             try :
-                url = "https://dialogflow.cloud.google.com/v1/integrations/line/webhook/931b7ef7-3948-402e-a49c-76786e302ebc"
+                url = "https://dialogflow.cloud.google.com/v1/integrations/line/webhook/6576b9df-df41-4476-bd59-11346b45ca4b"
                 requests.post(url,data=json_line, headers=json_headers)
             except:
                 replyObj = TextSendMessage(text="ติดต่อ dialogflow ไม่ได้")
