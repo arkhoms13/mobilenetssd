@@ -113,7 +113,7 @@ def callback():
     # เชื่อมต่อกับ dialogflow
     #intent = decoded["queryResult"]["intent"]["displayName"] 
     #text = decoded['originalDetectIntentRequest']['payload']['data']['message']['text'] 
-    #reply_token = decoded['originalDetectIntentRequest']['payload']['data']['replyToken']
+    #rtoken = decoded['originalDetectIntentRequest']['payload']['data']['replyToken']
     #id = decoded['originalDetectIntentRequest']['payload']['data']['source']['userId']
     #disname = line_bot_api.get_profile(id).display_name
     #reply(intent,text,reply_token,id,disname)
